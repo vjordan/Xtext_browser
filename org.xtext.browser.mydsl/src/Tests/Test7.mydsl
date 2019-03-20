@@ -1,0 +1,10 @@
+Test "7"{
+  Open "Firefox"
+  GoTo "http://www.imt-atlantique.fr/fr" 
+  title = Read Title of Element "actu_home_ctner_inner_cell1_titre"
+  url = Read Link of Element "actu_home_ctner_inner_cell1_titre"
+  GoTo "http://www.imt-atlantique.fr/fr/rechercher" 
+  Paste SearchField (title)
+  Click Button "Appliquer les filtres"
+  Verify Contains Link (url)
+}

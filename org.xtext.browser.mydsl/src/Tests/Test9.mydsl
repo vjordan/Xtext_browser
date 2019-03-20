@@ -1,0 +1,9 @@
+Test "9"{
+  Open "Firefox"
+  GoTo "http://www.imt-atlantique.fr/fr" 
+  For link=["COMMUNIQUÉS DE PRESSE" "DOSSIERS DE PRESSE" "VISUELS POUR LA PRESSE" "LA PRESSE EN PARLE" "TRIBUNES DE PRESSE" "LES PALMARÈS"]
+    Click Link (link)
+    Verify Contains Image "Imprimer"
+    Click Image "Imprimer"
+  EndFor
+}

@@ -1,0 +1,8 @@
+Test "5"{
+  Open "Firefox"
+  GoTo "http://www.imt-atlantique.fr/fr/formation/trouver-ma-formation" 
+  Uncheck all
+  Check ["Anglais" "A domicile"]
+  Click Button "Appliquer les critères"
+  Verify Contains Text "Aucun formation trouvée répondant à vos critères"
+}

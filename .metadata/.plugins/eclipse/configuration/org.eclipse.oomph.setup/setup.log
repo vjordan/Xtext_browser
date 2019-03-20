@@ -1,0 +1,23 @@
+[2018-11-12 11:39:14] Executing startup tasks
+[2018-11-12 11:39:14] Java(TM) SE Runtime Environment 1.8.0_112-b15
+[2018-11-12 11:39:14] Product self.product.version
+[2018-11-12 11:39:14] Workspace D:\Documents\EMN\FILA3\Dedies\runtime-EclipseXtext
+[2018-11-12 11:39:14] Bundle org.eclipse.oomph.setup 1.10.0.v20180828-0705, build=3652, branch=fddd6edb5a235aea831fecf04547579693a78a4e
+[2018-11-12 11:39:14] Bundle org.eclipse.oomph.setup.core 1.10.0.v20180714-0556, build=3652, branch=fddd6edb5a235aea831fecf04547579693a78a4e
+[2018-11-12 11:39:14] Bundle org.eclipse.oomph.setup.p2 1.10.0.v20180706-1242, build=3652, branch=fddd6edb5a235aea831fecf04547579693a78a4e
+[2018-11-12 11:39:14] Performing Preference /instance/org.eclipse.jdt.debug/org.eclipse.jdt.debug.default_breakpoint_suspend_policy = 2
+[2018-11-12 11:39:14] Performing Preference /instance/org.eclipse.jdt.debug/org.eclipse.jdt.debug.PREF_HCR_WITH_COMPILATION_ERRORS = true
+[2018-11-12 11:39:14] Performing Preference /instance/org.eclipse.jdt.debug/org.eclipse.jdt.debug.PREF_REQUEST_TIMEOUT = 3000
+[2018-11-12 11:39:15] Performing Preference /instance/org.eclipse.jdt.debug/org.eclipse.jdt.debug.suspend_for_breakpoints_during_evaluation = true
+[2018-11-12 11:39:15] Performing Preference /instance/org.eclipse.jdt.debug/org.eclipse.jdt.debugdefault_watchpoint_suspend_policy = 0
+[2018-11-12 11:39:15] Performing Preference /instance/org.eclipse.jdt.launching/org.eclipse.jdt.launching.only_include_exported_classpath_entries = false
+[2018-11-12 11:39:15] Performing Preference /instance/org.eclipse.jdt.launching/org.eclipse.jdt.launching.PREF_CONNECT_TIMEOUT = 20000
+[2018-11-12 11:39:15] Performing Preference /instance/org.eclipse.jdt.ui/org.eclipse.jdt.internal.ui.navigator.layout = 2
+[2018-11-12 11:39:15] Performing Preference /instance/org.eclipse.jst.server.tomcat.core/locationorg.eclipse.jst.server.tomcat.runtime.70 = D:/Program Files/Tomcat7034-light
+[2018-11-12 11:39:15] Performing Preference /instance/org.eclipse.wst.server.core/runtimes = <?xml version="1.0" encoding="UTF-8" standalone="no"?>...
+[2018-11-12 11:39:15] <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<runtimes>
+  <runtime id="Apache Tomcat v7.0" location="D:/Program Files/Tomcat7034-light" name="Apache Tomcat v7.0" runtime-type-id="org.eclipse.jst.server.tomcat.runtime.70" timestamp="0" vm-install-id="1508243442168" vm-install-type-id="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType"/>
+</runtimes>
+
+[2018-11-12 11:39:15] 

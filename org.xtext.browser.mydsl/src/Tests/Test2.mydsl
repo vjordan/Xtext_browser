@@ -1,0 +1,6 @@
+Test "2"{
+  Open "Firefox"
+  GoTo "http://www.imt-atlantique.fr/fr"
+  Click Link "Toutes les actualités"
+  Verify Contains Link "Accueil"
+}

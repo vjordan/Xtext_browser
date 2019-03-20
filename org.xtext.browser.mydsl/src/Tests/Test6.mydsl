@@ -1,0 +1,8 @@
+Test "6"{
+  Open "Firefox"
+  GoTo "http://www.imt-atlantique.fr/fr/rechercher" 
+  Insert SearchField with "2007"
+  Choose Box "Le mois dernier"
+  Click Button "Appliquer les filtres"
+  Verify Contains Text "Aucun résultat ne correspond à votre recherche"
+}

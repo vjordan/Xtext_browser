@@ -1,0 +1,11 @@
+Test "8"{
+  Open "Firefox"
+  GoTo "http://www.imt-atlantique.fr/fr/rechercher" 
+  Insert SearchField with "2007"
+  Click Button "Appliquer les filtres"
+  number = Count of Element "views-row"
+  Choose Box "Le mois dernier"
+  Click Button "Appliquer les filtres"
+  number2 = Count of Element "views-row"
+  Verify Equal (number) (number2)
+}

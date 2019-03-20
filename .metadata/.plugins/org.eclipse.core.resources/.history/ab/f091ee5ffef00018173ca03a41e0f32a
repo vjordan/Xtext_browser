@@ -1,0 +1,125 @@
+grammar org.xtext.browser.mydsl.MyDsl with org.eclipse.xtext.common.Terminals
+
+generate myDsl "http://www.xtext.org/browser/mydsl/MyDsl"
+
+Test:
+	"Test" number=STRING'{'
+        body+=INSTRUCTION*
+    '}'    
+;
+
+INSTRUCTION:
+    Open | GoTo | Verify | Click | Insert | Uncheck | Check | Choose | Variable | Read | Count | Paste | For | EndFor
+;
+
+Open:
+	"Open" browser=STRING
+;
+
+GoTo:
+    "GoTo" url=STRING
+;
+
+Verify:
+    "Verify" TYPE_VERIFY
+;
+
+TYPE_VERIFY:
+	Contains | Equal
+;
+
+Contains:
+	"Contains" type=TYPE_CONTAINS parametre=TYPE_PARAMETRE
+;
+
+TYPE_CONTAINS:
+	"Text" | "Link" | "Image"
+;
+
+TYPE_PARAMETRE:
+	Value | Var
+;
+
+Value:
+	value=STRING
+;
+
+Var:
+	'('value=ID')'
+;
+
+Equal:
+	"Equal" '('var1=ID')' '('var2=ID')'
+;
+
+Click:
+	"Click" type=TYPE_CLICK parametre=TYPE_PARAMETRE
+;
+
+TYPE_CLICK:
+	"Link" | "Button" | "Image"
+;
+
+Insert:
+	"Insert" "in" type=TYPE_INSERT name=STRING "with" parametre=TYPE_PARAMETRE
+;
+
+TYPE_INSERT:
+	"SearchField"
+;
+
+Uncheck:
+	"Uncheck" type=TYPE_CHECK_UNCHECK
+;
+
+TYPE_CHECK_UNCHECK:
+	"all" | '['tableau+=STRING*']'
+;
+
+Check:
+	"Check" type=TYPE_CHECK_UNCHECK
+;
+
+Choose:
+	"Choose" type=TYPE_CHOOSE parametre=STRING "in" name=STRING
+;
+
+TYPE_CHOOSE:
+	"Box"
+;
+
+Variable:
+	name=ID "=" instruction=TYPE_INSTRUCTION
+;
+
+TYPE_INSTRUCTION:
+	Read | Count
+;
+
+Read:
+	"Read" type=TYPE_READ "of Element " parametre=STRING
+;
+
+TYPE_READ:
+	"Link" | "Title"
+;
+
+Count:
+	"Count of Element " parametre=STRING
+;
+
+Paste:
+	"Paste" type=TYPE_PASTE '('parametre=ID')'
+;
+
+TYPE_PASTE:
+	"SearchField"
+;
+
+For:
+	"For" name=ID "=" '['tableau+=STRING*']' body+=INSTRUCTION*
+;
+
+EndFor:
+	"EndFor" name=ID
+;
